@@ -51,6 +51,6 @@ export class CourseService {
       throw new NotFoundException(`Course ID ${id} not found`);
     }
 
-    return this.courseRepository.delete(course);
+    return this.courseRepository.remove(course);
   }
 }
